@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/bottom_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nearby_orders"
+        android:icon="@drawable/bottom_nearby_order"
+        android:title="Nearby Orders" />
+
+    <item
+        android:id="@+id/blood_bank_map"
+        android:title="" />
+
+    <item
+        android:id="@+id/donation_requests"
+        android:icon="@drawable/bottom_donation_request"
+        android:title="Donation Requests" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/bottom_profile"
+        android:title="Profile" />
+</menu>

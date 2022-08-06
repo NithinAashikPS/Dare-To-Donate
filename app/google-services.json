@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1025450305909",
+    "project_id": "dare-to-donate",
+    "storage_bucket": "dare-to-donate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025450305909:android:d939297ee19d179ab64b3c",
+        "android_client_info": {
+          "package_name": "com.finalyearproject.daretodonate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025450305909-nc4i43sq13m7stl6s7n5kuj91c1aourr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIQ2uFGOX8OMvvw_-ol7-jq5Xv-Qi_Oe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025450305909-nc4i43sq13m7stl6s7n5kuj91c1aourr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

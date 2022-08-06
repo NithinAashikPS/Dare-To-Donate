@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:outlineAmbientShadowColor="@color/primary_dark"
+    android:outlineSpotShadowColor="@color/primary_dark"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/camp_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_medium"
+            android:maxLines="1"
+            android:text="Government Head Quarters Hospital, Padmanabhapuram"
+            android:textColor="@color/on_boarding_text_black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintEnd_toStartOf="@+id/hide_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/hide_btn"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/camp_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/camp_name"
+            app:srcCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="@color/primary_dark" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/hide"
+            app:layout_constraintEnd_toEndOf="@+id/hide_btn"
+            app:layout_constraintStart_toStartOf="@+id/camp_name"
+            app:layout_constraintTop_toBottomOf="@+id/camp_name">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blood_group_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                tools:visibility="gone">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/conducted_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="TextView"
+                android:textAlignment="inherit"
+                android:textColor="@color/on_boarding_text_black"
+                android:textSize="@dimen/_9sdp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@color/on_boarding_indicator_grey" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blood_bank_action_button"
+                    android:drawableLeft="@drawable/ic_outline_call"
+                    android:drawableTint="@color/primary_dark"
+                    android:includeFontPadding="false"
+                    android:text="Call"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primary_dark"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blood_bank_action_button"
+                    android:drawableLeft="@drawable/ic_outline_whatsapp"
+                    android:drawableTint="@color/primary_dark"
+                    android:includeFontPadding="false"
+                    android:text="Share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primary_dark"
+                    app:backgroundTint="@null" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/hide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/date_time"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout11"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout11">
+
+            <TextView
+                android:id="@+id/organized_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="TextView"
+                android:textAlignment="inherit"
+                android:textColor="@color/on_boarding_text_black"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="TextView"
+                android:textAlignment="inherit"
+                android:textColor="@color/on_boarding_text_black"
+                android:textSize="@dimen/_9sdp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_13sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="TextView"
+            android:textAlignment="inherit"
+            android:textColor="@color/on_boarding_text_black"
+            android:textSize="@dimen/_9sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

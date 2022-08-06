@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_container"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/primary_dark"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:scaleType="centerCrop"
+                android:padding="@dimen/_13sdp"
+                app:tint="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Nithin Aashik PS"
+            android:includeFontPadding="false"
+            android:textColor="@color/edit_text_text_black"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/user_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:drawableLeft="@drawable/ic_map_pin"
+            android:drawablePadding="@dimen/_5sdp"
+            android:text="Kanniyakumari, Tamilnadu"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/on_boarding_text_grey"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_60sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/button_background_squared"
+            android:drawableLeft="@drawable/ic_accept"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:includeFontPadding="false"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</LinearLayout>

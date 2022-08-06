@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/toast"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_30sdp"
+    android:outlineAmbientShadowColor="@color/primary_light"
+    android:outlineSpotShadowColor="@color/primary_light"
+    app:cardElevation="@dimen/_4sdp"
+    app:cardBackgroundColor="@color/white">
+
+    <TextView
+        android:id="@+id/message_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:textColor="@color/primary_dark" />
+
+</androidx.cardview.widget.CardView>

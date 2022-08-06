@@ -1,0 +1,36 @@
+<resources>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYWFzaGlrMDgwOCIsImEiOiJja2N6eDBtdmUwbnY5MzFvdTZpdjJzanFuIn0.u9-F_N255vfLeyeBuJwbxQ</string>
+    <string name="map_id">458a43d283c54c2a</string>
+    <string name="google_maps_api">AIzaSyDyZ-uI4Ia-DPWJ_LQiT6JvZcQJf0OxfcM</string>
+
+    <string name="app_name">Dare To Donate</string>
+    <string name="ws_link">http://34.100.167.58/ws/user/update</string>
+    <string name="api_register">http://34.100.167.58/api/user/register</string>
+    <string name="api_login">http://34.100.167.58/api/user/login</string>
+    <string name="api_reset_password">http://34.100.167.58/api/user/resetPassword</string>
+    <string name="api_update">http://34.100.167.58/api/user/update</string>
+    <string name="api_update_location">http://34.100.167.58/api/user/updateLocation</string>
+    <string name="api_bot">http://34.100.167.58/api/bot</string>
+    <string name="api_user">http://34.100.167.58/api/user</string>
+    <string name="api_bloodBank">http://34.100.167.58/api/bloodBank</string>
+    <string name="api_bloodCamp">http://34.100.167.58/api/bloodBank/camps</string>
+    <string name="api_bloodBank_directRequest">http://34.100.167.58/api/blood/directRequest</string>
+    <string name="api_bloodBank_requestBlood">http://34.100.167.58/api/bloodBank/requestBlood</string>
+    <string name="api_donationRequest">http://34.100.167.58/api/blood/donationRequests</string>
+    <string name="api_acceptRequest">http://34.100.167.58/api/blood/accept</string>
+    <string name="api_acceptedRequests">http://34.100.167.58/api/blood/acceptedRequests</string>
+    <string name="api_bloodReceived">http://34.100.167.58/api/blood/bloodReceived</string>
+    <string name="api_myRequests">http://34.100.167.58/api/blood/myRequests</string>
+    <string name="api_myDonations">http://34.100.167.58/api/blood/myDonations</string>
+    <string name="api_map">http://34.100.167.58/api/user/map</string>
+    <string name="api_notification">http://34.100.167.58/api/user/notification</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="on_boarding_title_1">Share Your Case !</string>
+    <string name="on_boarding_title_2">Find Blood Donor</string>
+    <string name="on_boarding_description_1">Add the case of a patient who needs blood and also participate in the requests for donation.</string>
+    <string name="on_boarding_description_2">Calling hundreds of Donor is no more required using our platform.</string>
+    <string name="on_boarding_description_3">You can donate for ones in need and request blood if you need.</string>
+    <string name="log_in">Log in</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

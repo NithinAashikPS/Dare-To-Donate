@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_170sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_view_pager_indicator"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_6sdp"
+        android:background="@color/edit_text_background_grey"
+        app:layout_constraintEnd_toEndOf="@+id/main_view_pager"
+        app:layout_constraintStart_toStartOf="@+id/main_view_pager"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_pager"
+        app:tabBackground="@drawable/main_view_pager_indicator_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+    <GridView
+        android:id="@+id/main_grid_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/edit_text_background_grey"
+        android:numColumns="3"
+        app:layout_constraintEnd_toEndOf="@+id/main_view_pager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_view_pager_indicator" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="Accepted Request"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/main_grid_view"
+        app:layout_constraintTop_toBottomOf="@+id/main_grid_view" />
+
+    <include
+        android:id="@+id/accepted_request"
+        layout="@layout/donation_request_item"
+        android:layout_width="0dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
